@@ -1,0 +1,10 @@
+# Top-level configuration
+name = "image-classifier-worker"
+main = "src/index.ts"
+node_compat = true
+workers_dev = true
+compatibility_date = "2023-05-14"
+
+constellation = [
+    {binding = 'CLASSIFIER', project_id = 'a3bc6abe-ea19-4f11-ab76-35606881c832'},
+]
