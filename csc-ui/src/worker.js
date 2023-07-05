@@ -12,6 +12,8 @@ const TASK_FUNCTION_MAPPING = {
     'text-generation': text_generation,
     'code-completion': code_completion,
     'masked-language-modelling': masked_lm,
+    'masked-language-modelling-constellation': masked_lm_constellation,
+
     'sequence-classification': sequence_classification,
     'token-classification': token_classification,
     'zero-shot-classification': zero_shot_classification,
@@ -249,6 +251,10 @@ async function masked_lm(data) {
     });
 
     return output;
+}
+
+async function masked_lm_constellation(data) {
+    // call constellation function
 }
 
 async function sequence_classification(data) {
